@@ -4,18 +4,21 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { BintoDezPage } from '../pages/BintoDez/BintoDez';
-import { DevelopersPage } from '../pages/Developers/Developers';
 import { DeztoBinPage } from '../pages/DeztoBin/DeztoBin';
-
+import { LtoBinPage } from '../pages/LtoBin/LtoBin';
+import { DevelopersPage } from '../pages/Developers/Developers';
+import { homePage } from '../pages/home/home';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
   declarations: [
     MyApp,
+    homePage,
     BintoDezPage,
-    DevelopersPage,
-    DeztoBinPage
+    DeztoBinPage,
+    LtoBinPage,
+    DevelopersPage
   ],
   imports: [
     BrowserModule,
@@ -24,9 +27,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    homePage,
     BintoDezPage,
-    DevelopersPage,
-    DeztoBinPage
+    DeztoBinPage,
+    LtoBinPage,
+    DevelopersPage
 
   ],
   providers: [

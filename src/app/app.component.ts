@@ -4,16 +4,17 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { BintoDezPage } from '../pages/BintoDez/BintoDez';
-import { DevelopersPage } from '../pages/Developers/Developers';
 import { DeztoBinPage } from '../pages/DeztoBin/DeztoBin';
-
+import { LtoBinPage } from '../pages/LtoBin/LtoBin';
+import { DevelopersPage } from '../pages/Developers/Developers';
+import { homePage } from '../pages/home/home';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = BintoDezPage;
+  rootPage: any = homePage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -22,9 +23,11 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
+      { title: 'Home', component: homePage },
       { title: 'BintoDez', component: BintoDezPage },
+      { title: 'DeztoBin', component: DeztoBinPage},
+      { title: 'LtoBin', component: LtoBinPage},
       { title: 'Developers', component: DevelopersPage },
-      { title: 'DeztoBin', component: DeztoBinPage}
 
     ];
 

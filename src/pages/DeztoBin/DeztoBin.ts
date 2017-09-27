@@ -14,22 +14,21 @@ export class DeztoBinPage {
     let num = 0;
     let sum = "";
     let calc = 0;
-    let fin ="";
-    let y=1;
+    let fin = "";
+    let y = 1;
 
     calc = parseInt(bam)
 
-    while(calc>=1)
-	{
-	sum += calc % 2
-	num = calc % 2
-	  calc =(calc -1* num )/2
-  }
-  while (y< sum.length+1){
+    while (calc >= 1) {
+      sum += calc % 2
+      num = calc % 2
+      calc = (calc - 1 * num) / 2
+    }
+    while (y < sum.length + 1) {
 
-      fin += ((parseInt(sum) % Math.pow(10,y))-(parseInt(sum) % Math.pow(10,y-1)))/ (Math.pow(10,y-1))
+      fin += ((parseInt(sum) % Math.pow(10, y)) - (parseInt(sum) % Math.pow(10, y - 1))) / (Math.pow(10, y - 1))
 
-   y++
+      y++
     }
 
     return fin
@@ -45,6 +44,6 @@ export class DeztoBinPage {
   }
   constructor(public navCtrl: NavController) {
 
- }
+  }
 
 }

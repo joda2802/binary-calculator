@@ -24,7 +24,7 @@ export class BintoDezPage {
 
 
     }
-    return sum
+    return sum || ""
   }
   constructor(public navCtrl: NavController) {
 
