@@ -8,7 +8,7 @@ import { NavController, NavParams } from 'ionic-angular';
 export class LtoBinPage {
 
   rii = "";
-  get score() {
+ get score() {
     const bam = this.rii
     let fin = ""
 
@@ -119,7 +119,7 @@ export class LtoBinPage {
 
     else if (bam == "01111010") return "z";
 
-    else return "ERROR";
+
   }
   constructor(public navCtrl: NavController) {
 
