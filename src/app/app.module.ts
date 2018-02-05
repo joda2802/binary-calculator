@@ -6,6 +6,8 @@ import { MyApp } from './app.component';
 import { BintoDezPage } from '../pages/BintoDez/BintoDez';
 import { DeztoBinPage } from '../pages/DeztoBin/DeztoBin';
 import { LtoBinPage } from '../pages/LtoBin/LtoBin';
+import { BintoLPage } from '../pages/BintoL/BintoL';
+
 import { DevelopersPage } from '../pages/Developers/Developers';
 import { homePage } from '../pages/home/home';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -18,6 +20,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     BintoDezPage,
     DeztoBinPage,
     LtoBinPage,
+    BintoLPage,
     DevelopersPage
   ],
   imports: [
@@ -31,6 +34,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     BintoDezPage,
     DeztoBinPage,
     LtoBinPage,
+    BintoLPage,
     DevelopersPage
 
   ],

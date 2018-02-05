@@ -8,117 +8,127 @@ import { NavController, NavParams } from 'ionic-angular';
 export class LtoBinPage {
 
   rii = "";
- get score() {
+  get score() {
     const bam = this.rii
     let fin = ""
+    let i=0;
+    let char ="";
+while(i<bam.length){
+     char = bam.charAt(i);
 
 
 
 
-    if (bam == "01000001") return "A";
 
-    else if (bam == "01100001") return "a";
+    if (char == "A") fin += "01000001";
 
-    else if (bam == "01000010") return "B";
+    else if (char == "a") fin += "01100001";
+    else if (char == "B") fin += "01000010";
 
-    else if (bam == "01100010") return "b";
+    else if (char == "b") fin += "01100010";
 
-    else if (bam == "01000011") return "C";
+    else if (char == "C") fin += "01000011";
 
-    else if (bam == "01100011") return "c";
+    else if (char == "c") fin += "01100011";
 
-    else if (bam == "01000100") return "D";
+    else if (char == "D") fin += "01000100";
 
-    else if (bam == "01100100") return "d";
+    else if (char == "d") fin += "01100100";
 
-    else if (bam == "01000101") return "E";
+    else if (char == "E") fin += "01000101";
 
-    else if (bam == "01100101") return "e";
+    else if (char == "e") fin += "01100101";
 
-    else if (bam == "01000110") return "F";
+    else if (char == "F") fin += "01000110";
 
-    else if (bam == "01100110") return "f";
+    else if (char == "f") fin += "01100110";
 
-    else if (bam == "01000111") return "G";
+    else if (char == "G") fin += "01000111";
 
-    else if (bam == "01100111") return "g";
+    else if (char == "g") fin += "01100111";
 
-    else if (bam == "01001000") return "H";
+    else if (char == "H") fin += "01001000";
 
-    else if (bam == "01101000") return "h";
+    else if (char == "h") fin += "01101000";
 
-    else if (bam == "01001001") return "I";
+    else if (char == "I") fin += "01001001";
 
-    else if (bam == "01101001") return "i";
+    else if (char == "i") fin += "01101001";
 
-    else if (bam == "01001010") return "J";
+    else if (char == "J") fin += "01001010";
 
-    else if (bam == "01101010") return "j";
+    else if (char == "j") fin += "01101010";
 
-    else if (bam == "01001011") return "K";
+    else if (char == "K") fin += "01001011";
 
-    else if (bam == "01101011") return "k";
+    else if (char == "k") fin += "01101011";
 
-    else if (bam == "01001100") return "L";
+    else if (char == "L") fin += "01001100";
 
-    else if (bam == "01101100") return "l";
+    else if (char == "l") fin += "01101100";
 
-    else if (bam == "01001101") return "M";
+    else if (char == "M") fin += "01001101";
 
-    else if (bam == "01101101") return "m";
+    else if (char == "m") fin += "01101101";
 
-    else if (bam == "01001110") return "N";
+    else if (char == "N") fin += "01001110";
 
-    else if (bam == "01101110") return "n";
+    else if (char == "n") fin += "01101110";
 
-    else if (bam == "01001111") return "O";
+    else if (char == "O") fin += "01001111";
 
-    else if (bam == "01001111") return "o";
+    else if (char == "o") fin += "01001111";
 
-    else if (bam == "01010000") return "P";
+    else if (char == "P") fin += "01010000";
 
-    else if (bam == "01110000") return "p";
+    else if (char == "p") fin += "01110000";
 
-    else if (bam == "01010001") return "Q";
+    else if (char == "Q") fin += "01010001";
 
-    else if (bam == "01110001") return "q";
+    else if (char == "q") fin += "01110001";
 
-    else if (bam == "01010010") return "R";
+    else if (char == "R") fin += "01010010";
 
-    else if (bam == "01110010") return "r";
+    else if (char == "r") fin += "01110010";
 
-    else if (bam == "01010011") return "S";
+    else if (char == "S") fin += "01010011";
 
-    else if (bam == "01110011") return "s";
+    else if (char == "s") fin += "01110011";
 
-    else if (bam == "01010100") return "T";
+    else if (char == "T") fin += "01010100";
 
-    else if (bam == "01110100") return "t";
+    else if (char == "t") fin += "01110100";
 
-    else if (bam == "01010101") return "U";
+    else if (char == "U") fin += "01010101";
 
-    else if (bam == "01110101") return "u";
+    else if (char == "u") fin += "01110101";
 
-    else if (bam == "01010110") return "V";
+    else if (char == "V") fin += "01010110";
 
-    else if (bam == "01110110") return "v";
+    else if (char == "v") fin += "01110110";
 
-    else if (bam == "01010111") return "W";
+    else if (char == "W") fin += "01010111";
 
-    else if (bam == "01110111") return "w";
+    else if (char == "w") fin += "01110111";
 
-    else if (bam == "01011000") return "X";
+    else if (char == "X") fin += "01011000";
 
-    else if (bam == "01111000") return "x";
+    else if (char == "x") fin += "01111000";
 
-    else if (bam == "01011001") return "Y";
+    else if (char == "Y") fin += "01011001";
 
-    else if (bam == "01111001") return "y";
+    else if (char == "y") fin += "01111001";
 
-    else if (bam == "01011010") return "Z";
+    else if (char == "Z") fin += "01011010";
 
-    else if (bam == "01111010") return "z";
+    else if (char == "z") fin += "01111010";
 
+    else if(char== " ") fin += " ";
+
+    else return "invalid"
+i++
+}
+return fin;
 
   }
   constructor(public navCtrl: NavController) {

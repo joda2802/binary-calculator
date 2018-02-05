@@ -4,7 +4,12 @@
       <ion-icon name="menu"></ion-icon>
 
     </button>
-    <ion-title>Home</ion-title>
+    <ion-buttons start>
+     <button ion-button icon-only color="royal" (click)="showActionSheet()">
+       <ion-icon name="more"></ion-icon>
+     </button>
+   </ion-buttons>
+    <ion-title>Binary Calculator</ion-title>
 
   </ion-navbar>
 
@@ -12,23 +17,17 @@
 
 <ion-content>
 
-  <ion-card>
-    <ion-card-header>
-      Binary calculator
-    </ion-card-header>
 
-
-  </ion-card>
   <ion-grid>
     <ion-row>
-      <ion-col col-6><button color="secondary" ion-button block large (click)="pushPage()">BintoDez</button></ion-col>
-      <ion-col col-6><button color="secondary" ion-button block large (click)="pushPage2()">DeztoBin</button></ion-col>
+      <ion-col col-6><button color="secondary" ion-button block large (click)="pushPage()">binary to decimal</button></ion-col>
+      <ion-col col-6><button color="secondary" ion-button block large (click)="pushPage2()">decimal to binary</button></ion-col>
     </ion-row>
     <ion-row>
       <ion-col col-6> <button color="secondary" ion-button block large (click)="pushPage3()">
-        BintoL
+        Letters to binary
   </button></ion-col>
-      <ion-col col-6><button color="secondary" ion-button block large>BintoL</button></ion-col>
+      <ion-col col-6><button color="secondary" ion-button block large>binary to Letters</button></ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>

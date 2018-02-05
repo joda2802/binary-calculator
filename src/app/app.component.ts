@@ -7,6 +7,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { BintoDezPage } from '../pages/BintoDez/BintoDez';
 import { DeztoBinPage } from '../pages/DeztoBin/DeztoBin';
 import { LtoBinPage } from '../pages/LtoBin/LtoBin';
+import { BintoLPage } from '../pages/BintoL/BintoL';
+
 import { DevelopersPage } from '../pages/Developers/Developers';
 import { homePage } from '../pages/home/home';
 @Component({
@@ -28,6 +30,7 @@ export class MyApp {
       { title: 'BintoDez', component: BintoDezPage },
       { title: 'DeztoBin', component: DeztoBinPage},
       { title: 'LtoBin', component: LtoBinPage},
+      { title: 'BintoL', component: BintoLPage},
       { title: 'Developers', component: DevelopersPage },
 
     ];
