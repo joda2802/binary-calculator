@@ -1,6 +1,12 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { Clipboard } from '@ionic-native/clipboard';
+import {
+  Component
+} from '@angular/core';
+import {
+  NavController
+} from 'ionic-angular';
+import {
+  Clipboard
+} from '@ionic-native/clipboard';
 
 @Component({
   selector: 'page-BintoDez',
@@ -9,7 +15,7 @@ import { Clipboard } from '@ionic-native/clipboard';
 export class DeztoBinPage {
 
   rii = "";
-  cop ="";
+  cop = "";
   get score() {
     const bam = this.rii
     let between = 0;
@@ -32,7 +38,7 @@ export class DeztoBinPage {
 
       y++
     }
-    this.cop=fin;
+    this.cop = fin;
     return fin
 
 
@@ -44,10 +50,10 @@ export class DeztoBinPage {
 
 
   }
-  constructor(public navCtrl: NavController,private clipboard:Clipboard) {
+  constructor(public navCtrl: NavController, private clipboard: Clipboard) {
 
   }
-  copy(){
+  copy() {
     this.clipboard.copy(this.cop);
 
 

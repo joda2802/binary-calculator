@@ -1,12 +1,29 @@
-import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
-import { ActionSheetController } from 'ionic-angular';
-import { DeztoBinPage } from '../DeztoBin/DeztoBin';
-import { LtoBinPage } from '../LtoBin/LtoBin';
-import { DevelopersPage } from '../Developers/Developers';
-import { BintoLPage } from '../BintoL/BintoL';
+import {
+  Component
+} from '@angular/core';
+import {
+  NavController,
+  NavParams
+} from 'ionic-angular';
+import {
+  ActionSheetController
+} from 'ionic-angular';
+import {
+  DeztoBinPage
+} from '../DeztoBin/DeztoBin';
+import {
+  LtoBinPage
+} from '../LtoBin/LtoBin';
+import {
+  DevelopersPage
+} from '../Developers/Developers';
+import {
+  BintoLPage
+} from '../BintoL/BintoL';
 
-import { BintoDezPage } from '../BintoDez/BintoDez';
+import {
+  BintoDezPage
+} from '../BintoDez/BintoDez';
 
 @Component({
   selector: 'page-home',
@@ -19,7 +36,7 @@ export class homePage {
 
   }
   pushPage() {
-      this.navCtrl.push(BintoDezPage);
+    this.navCtrl.push(BintoDezPage);
   }
   pushPage2() {
     this.navCtrl.push(DeztoBinPage);
@@ -31,30 +48,28 @@ export class homePage {
     this.navCtrl.push(BintoLPage);
   }
   showActionSheet() {
-   let actionSheet = this.actionSheetCtrl.create({
-     title: 'Quick menu',
-     buttons: [
-       {
-         text: 'Developers',
-         role: 'destructive',
-         handler: () => {
-           console.log('Destructive clicked');
-           this.navCtrl.push(DevelopersPage)
-         }
-       },{
-         text: 'Explanation',
-         handler: () => {
-           console.log('Archive clicked');
-         }
-       },{
-         text: 'Cancel',
-         role: 'cancel',
-         handler: () => {
-           console.log('Cancel clicked');
-         }
-       }
-     ]
-   });
-   actionSheet.present();
- }
+    let actionSheet = this.actionSheetCtrl.create({
+      title: 'Quick menu',
+      buttons: [{
+        text: 'Developers',
+        role: 'destructive',
+        handler: () => {
+          console.log('Destructive clicked');
+          this.navCtrl.push(DevelopersPage)
+        }
+      }, {
+        text: 'Explanation',
+        handler: () => {
+          console.log('Archive clicked');
+        }
+      }, {
+        text: 'Cancel',
+        role: 'cancel',
+        handler: () => {
+          console.log('Cancel clicked');
+        }
+      }]
+    });
+    actionSheet.present();
+  }
 }

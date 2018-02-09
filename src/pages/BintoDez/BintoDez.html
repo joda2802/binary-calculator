@@ -1,6 +1,5 @@
-
 <ion-header>
-  <ion-navbar color = "primary">
+  <ion-navbar color="primary">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -10,14 +9,14 @@
 
 <ion-content padding>
   <ion-fab right bottom>
-    <button ion-fab color="secondary"(click)="copy()"><ion-icon name="copy"></ion-icon></button>
+    <button ion-fab color="secondary" (click)="copy()"><ion-icon name="copy"></ion-icon></button>
 
   </ion-fab>
 
-  <ion-item>
-   <ion-label floating>Binary Number here</ion-label >
-   <ion-input type="text" [(ngModel)]="rii"></ion-input>
- </ion-item>
+  <ion-item style="background-color:transparent"> 
+    <ion-label floating>Binary Number here</ion-label>
+    <ion-input type="text" [(ngModel)]="rii"></ion-input>
+  </ion-item>
 
 
   <p>

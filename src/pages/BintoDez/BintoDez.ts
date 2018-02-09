@@ -1,6 +1,12 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { Clipboard } from '@ionic-native/clipboard';
+import {
+  Component
+} from '@angular/core';
+import {
+  NavController
+} from 'ionic-angular';
+import {
+  Clipboard
+} from '@ionic-native/clipboard';
 
 @Component({
   selector: 'page-BintoDez',
@@ -9,7 +15,7 @@ import { Clipboard } from '@ionic-native/clipboard';
 export class BintoDezPage {
 
   rii = "";
-  cop ="";
+  cop = "";
   get score() {
     const bam = this.rii
     let sum = 0;
@@ -29,11 +35,11 @@ export class BintoDezPage {
     this.cop = sum.toString();
     return sum || ""
   }
-  constructor(public navCtrl: NavController,private clipboard: Clipboard) {
+  constructor(public navCtrl: NavController, private clipboard: Clipboard) {
 
   }
-  copy(){
-  this.clipboard.copy(this.cop);
+  copy() {
+    this.clipboard.copy(this.cop);
 
 
 

@@ -1,6 +1,12 @@
 // http://ionicframework.com/docs/theming/
 
-
+.fixed-content{
+    background-color: #051923;
+}
+.item .item-content
+{
+	background-color: transparent !important;
+}
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
