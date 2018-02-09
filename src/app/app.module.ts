@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
-
+import { Clipboard } from '@ionic-native/clipboard';
 import { MyApp } from './app.component';
 import { BintoDezPage } from '../pages/BintoDez/BintoDez';
 import { DeztoBinPage } from '../pages/DeztoBin/DeztoBin';
@@ -41,6 +41,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    Clipboard,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

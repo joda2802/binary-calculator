@@ -28,11 +28,11 @@ export class homePage {
     this.navCtrl.push(LtoBinPage);
   }
   pushPage4() {
-    this.navCtrl.push(BintoDezPage);
+    this.navCtrl.push(BintoLPage);
   }
   showActionSheet() {
    let actionSheet = this.actionSheetCtrl.create({
-     title: 'Modify your album',
+     title: 'Quick menu',
      buttons: [
        {
          text: 'Developers',
@@ -42,7 +42,7 @@ export class homePage {
            this.navCtrl.push(DevelopersPage)
          }
        },{
-         text: 'Archive',
+         text: 'Explanation',
          handler: () => {
            console.log('Archive clicked');
          }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { Clipboard } from '@ionic-native/clipboard';
 
 @Component({
   selector: 'page-LtoBin',
@@ -8,6 +9,7 @@ import { NavController, NavParams } from 'ionic-angular';
 export class LtoBinPage {
 
   rii = "";
+  cop ="";
   get score() {
     const bam = this.rii
     let fin = ""
@@ -128,10 +130,19 @@ while(i<bam.length){
     else return "invalid"
 i++
 }
+this.cop = fin;
 return fin;
 
   }
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,private clipboard: Clipboard) {
+
+  }
+
+  copy(){
+  this.clipboard.copy(this.cop);
+
+
+
 
   }
 
