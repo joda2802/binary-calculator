@@ -132,7 +132,7 @@ export class LtoBinPage {
 
       else if (char == "z") fin += "01111010";
 
-      else if (char == " ") fin += " ";
+      else if (char == " ") fin += "00100000";
 
       else return "invalid"
       i++

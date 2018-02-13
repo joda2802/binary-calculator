@@ -25,8 +25,8 @@ export class BintoDezPage {
     while (x < bam.length + 1) {
       check = ((parseInt(bam) % Math.pow(10, x)) - (parseInt(bam) % Math.pow(10, x - 1))) / (Math.pow(10, x - 1))
 
-      if (check == 1 || check == 0) sum += ((parseInt(bam) % (Math.pow(10, x))) - (parseInt(bam) % (Math.pow(10, x - 1)))) / (Math.pow(10, x - 1)) * Math.pow(2, x - 1);
-      else return "Only use one and zero!";
+      /*if (check == 1 || check == 0)*/ sum += ((parseInt(bam) % (Math.pow(10, x))) - (parseInt(bam) % (Math.pow(10, x - 1)))) / (Math.pow(10, x - 1)) * Math.pow(2, x - 1);
+    //  else return "Only use one and zero!";
 
       x++;
 

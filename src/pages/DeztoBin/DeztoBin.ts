@@ -30,9 +30,9 @@ export class DeztoBinPage {
     while (calc >= 1) {
       sum += calc % 2
       num = calc % 2
-      calc = (calc - 1 * num) / 2
+      calc = (calc - num) / 2
     }
-    while (y < sum.length + 1) {
+    while (y <= sum.length ) {
 
       fin += ((parseInt(sum) % Math.pow(10, y)) - (parseInt(sum) % Math.pow(10, y - 1))) / (Math.pow(10, y - 1))
 
